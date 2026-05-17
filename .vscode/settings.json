@@ -1,0 +1,4 @@
+{
+  "python.analysis.extraPaths": ["./src"],
+  "python.pythonPath": "venv/Scripts/python.exe"
+}

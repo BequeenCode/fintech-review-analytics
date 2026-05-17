@@ -1,0 +1,4 @@
+google_play_scraper
+pandas
+python-dateutil
+pytest
