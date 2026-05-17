@@ -4,16 +4,33 @@ This repository contains the Task 1 implementation for scraping and preprocessin
 
 ## Purpose
 
-- Collect reviews for bank apps using `google-play-scraper`
-- Clean and normalize review data
-- Keep the dataset out of version control
-- Use GitHub Actions for CI verification
+- Scrape review text, rating, date, bank/app name, and source from Google Play
+- Normalize review data to an analysis-ready CSV
+- Keep the dataset out of version control with `.gitignore`
+- Validate the project with GitHub Actions on push to `main`
 
-## Branch Workflow
+## Task 1 Implementation
 
-- `main`: stable project branch
-- `task-1`: Task 1 development branch
+Files created for Task 1:
 
-## Status
+- `src/data_pipeline.py` — scraper and preprocessing pipeline
+- `scripts/run_task1.py` — run the scraper and save cleaned CSV
+- `tests/test_data_pipeline.py` — validation for cleaning logic
 
-Working in `task-1` to create the initial project structure and implement the scraper.
+## How to run
+
+1. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+2. Run the scraping and preprocessing script:
+   ```bash
+   python scripts/run_task1.py
+   ```
+3. The cleaned dataset will be saved to `data/reviews_cleaned.csv`.
+
+## Notes
+
+- The current script uses placeholder app package IDs for three bank apps; replace `BANK_APPS` in `scripts/run_task1.py` with the exact Google Play package names for the target banks.
+- The dataset is ignored via `.gitignore`, so CSV data is not committed.
+- CI is configured to run `pytest` on every push to `main`.
