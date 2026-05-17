@@ -9,10 +9,10 @@ from src.data_pipeline import build_review_dataset
 
 
 BANK_APPS = {
-    # Replace these sample app IDs with the actual bank apps you want to target.
-    "Bank of America": "com.infonow.bofa",
+    # Google Play package IDs for the target bank mobile apps.
+    "Bank of America Mobile Banking": "com.infonow.bofa",
     "Chase Mobile": "com.chase.sig.android",
-    "Wells Fargo": "com.wf.wellsfargomobile",
+    "Wells Fargo Mobile": "com.wf.wellsfargomobile",
 }
 
 

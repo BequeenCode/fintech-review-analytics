@@ -31,6 +31,9 @@ Files created for Task 1:
 
 ## Notes
 
-- The current script uses placeholder app package IDs for three bank apps; replace `BANK_APPS` in `scripts/run_task1.py` with the exact Google Play package names for the target banks.
+- The script currently targets the following Google Play apps:
+  - `Bank of America Mobile Banking` — `com.infonow.bofa`
+  - `Chase Mobile` — `com.chase.sig.android`
+  - `Wells Fargo Mobile` — `com.wf.wellsfargomobile`
 - The dataset is ignored via `.gitignore`, so CSV data is not committed.
 - CI is configured to run `pytest` on every push to `main`.
