@@ -1,0 +1,17 @@
+# Ignore raw and generated data
+/data/
+*.csv
+*.db
+
+# Python artifacts
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environments
+venv/
+.env
+
+# Jupyter notebook checkpoints
+.ipynb_checkpoints/
