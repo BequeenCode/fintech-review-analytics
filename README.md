@@ -37,3 +37,11 @@ Files created for Task 1:
   - `Wells Fargo Mobile` — `com.wf.wellsfargomobile`
 - The dataset is ignored via `.gitignore`, so CSV data is not committed.
 - CI is configured to run `pytest` on every push to `main`.
+
+## Task 2 Partial Progress
+
+- Created `src/sentiment_thematic.py` for review sentiment scoring and theme assignment.
+- Created `scripts/run_task2.py` to load the cleaned Task 1 dataset and save Task 2 results.
+- Created `notebooks/task2_analysis.ipynb` as a starter notebook for inspecting sentiment and theme outputs.
+- Sentiment scoring currently uses VADER as a lightweight baseline, with transformer-based classification left for future comparison.
+- Theme extraction uses keyword matching and TF-IDF-supported phrases grouped into business-relevant topics.

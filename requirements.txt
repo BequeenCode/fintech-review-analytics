@@ -2,3 +2,6 @@ google_play_scraper
 pandas
 python-dateutil
 pytest
+vaderSentiment
+scikit-learn
+nltk
